@@ -30,5 +30,7 @@ public class CalculoPagamento
         System.out.printf("Descontos: %.2f%n", descontos);
         System.out.printf("Total devido: %.2f%n", valorLiquido);
 
+        entrada.close();
+
     }
 }

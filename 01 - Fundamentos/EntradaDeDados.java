@@ -9,5 +9,7 @@ public class EntradaDeDados {
         String nome = entrada.nextLine();
         System.out.printf("Oi, %s%n", nome);
 
+        entrada.close();
+
     }
 }
