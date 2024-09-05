@@ -20,7 +20,12 @@ public class CalculadoraImpostos {
 
         /* Utilizando o ternário para realizar o mesmo trecho de código acima.*/
 
-        double valorImpostos = tipoNotaFiscal == 'S' ? totalFaturado * 0.16 : totalFaturado * 0.35;
+        // double valorImpostos = tipoNotaFiscal == 'S' ? totalFaturado * 0.16 : totalFaturado * 0.35;
+
+        /* melhorando a sintaxe do operador ternário acima */
+
+        double taxaImpostos = tipoNotaFiscal == 'S' ? 0.16 : 0.35;
+        double valorImpostos = totalFaturado * taxaImpostos;
 
         System.out.printf("Total faturado: R$%.2f%n", totalFaturado);
         System.out.printf("Valor dos impostos: R$%.2f%n", valorImpostos);
